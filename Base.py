@@ -75,8 +75,8 @@ class DataModel:
       return self.data_dic
     
    def get_data(self,sql):
-        dsn=co.makedsn('192.168.113.226','11521','boss')
-        db=co.connect('zsboss','zsboss123',dsn)
+        dsn=co.makedsn('xx','xx','xx')
+        db=co.connect('xx','xx',dsn)
         cursor=db.cursor()
         cursor.execute(sql)
         data=cursor.fetchall()
